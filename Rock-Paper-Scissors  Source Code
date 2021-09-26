@@ -1,0 +1,58 @@
+#Rock Wins Over Scissors
+#Paper Wins Over Rock
+#Scissors Wins Over Rock
+import random
+x = random.randint(1,3)
+if x==1 :
+    x="Paper"
+if x==2 :
+    x="Rock"
+if x==3 :
+    x="Scissors"
+def compare(b,x):
+    if b=="Paper" and x=="Paper":
+        print("Its a Draw :) ")
+    if b=="Scissors" and x=="Scissors":
+        print("Its a Draw :) ")
+    if b=="Rock" and x=="Rock":
+        print("Its a Draw :) ")
+    if b=="Rock" and x=="Scissors":
+        print( "You Won")
+    if b=="Rock" and x=="Paper":
+        print( "You Lost")
+    if b=="Paper" and x=="Scissors":
+        print( "You Lost")
+    if b=="Paper" and x=="Rock":
+        print( "You Won")
+    if b == "Scissors" and x == "Rock":
+        print("You Lostt")
+    if b == "Scissors" and x == "Paper":
+        print("You Won")
+def launch():
+    print("Please Enter Your Choice \n"
+           +"Scissors\n"
+           +"Paper\n"
+           +"Rock\n")
+    b=input()
+    print("The pc has chosen",x)
+    compare(b,x)
+
+
+print("Welcome to The Game of Rock Paper Scissors \n"
+    +"Winning Rules of the Rock paper scissor game as follows: \n"
+                                +"Rock vs paper->paper wins \n"
+                                + "Rock vs scissor->Rock wins \n"
+                                +"paper vs scissor->scissor wins \n"
+    +"Please Enter YES to Start the Game or NO to end the Game \n")
+a=input()
+if a=="YES":
+    launch()
+else:
+    print("Thankyou For Coming")
+
+
+
+
+
+
+
